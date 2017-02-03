@@ -1,0 +1,236 @@
+.row {
+  box-sizing: border-box;
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+}
+
+.cell {
+  display: table-cell;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+}
+
+@supports (display: flex) {
+  .row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  .cell {
+    display: block;
+  }
+
+  .cell-valign-middle,
+  .cell-valign-bottom {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+.cell-min {
+  width: 1%;
+  -webkit-box-flex: 0;
+      -ms-flex: none auto;
+          flex: none auto;
+}
+
+.cell-max {
+  width: 100%;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 100%;
+          flex: 1 100%;
+}
+
+body, html {
+  height: 100%;
+}
+
+body {
+  background: url(http://desktop.freewallpaper4.me/view/original/6507/gold-bokeh.jpg);
+  background-size: cover;
+  color: white;
+  font-family: verdana;
+  padding-top: 20px;
+}
+
+.row {
+  border-collapse: seperate;
+  border-spacing: 8px 0;
+  padding: 4px;
+}
+
+.cell {
+  border-radius: 6px;
+  background: rgba(136, 136, 136, 0.85);
+  margin-right: 8px;
+  padding: 6px;
+}
+.cell.cell-1-5 {
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+  width: 20%;
+}
+.cell.cell-nowrap {
+  overflow: hidden;
+  white-space: nowrap;
+}
+.cell.cell-valign-middle {
+  vertical-align: middle;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.cell.cell-valign-bottom {
+  vertical-align: bottom;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.cell.cell-align-center {
+  text-align: center;
+}
+.cell.cell-align-right {
+  text-align: right;
+}
+.cell.cell-100px {
+  -webkit-box-flex: 0;
+      -ms-flex: none;
+          flex: none;
+  width: 100px;
+  max-width: 100px;
+}
+
+/*tables end*/
+
+.numberMenu {
+  list-style: none;
+  position: absolute;
+  z-index: 4;
+}
+
+.numberMenu li {
+  background-color: white;
+  width: 50px;
+  text-align: center;
+  margin: none;
+  display: inline-block;
+  border-width: 5px;
+  border-style: solid;
+  border-color: black;
+}
+
+.artificial-margin {
+  height: 15vh;
+}
+
+.center-div
+{
+     margin: 0 auto;
+     width: 70vw;
+}
+
+.card {
+  height: 600px;
+  transition: transform 400ms ease-out;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.blue {
+  background-color: blue;
+}
+
+table {
+  border-spacing: 0.5rem;
+}
+
+td {
+  padding: 0.5rem;
+}
+
+.animated {
+  -webkit-animation-duration: 400ms;
+  -webkit-transition-timing-function: ease-out;
+  animation-duration: 400ms;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.fadeInUp {
+  animation-name: fadeInUp;
+}
+
+.card1, .card2, .card3, .card4, .card5, .card6, .card7 {
+  display: none;
+  position: relative;
+  z-index: 3;
+  border: solid;
+  border-width: 5px;
+}
+
+.card1 {
+  border-color: lightblue;
+ }
+
+.card2 {
+  border-color: pink; }
+
+.card3 {
+  border-color: orange; }
+
+.card4 {
+  border-color: red; }
+
+.card5 {
+  border-color: green; }
+
+.card6 {
+  border-color: darkblue; }
+
+.card7 {
+  border-color: black; }
+
+.card1.appear, .card2.appear, .card3.appear, .card4.appear, .card5.appear, .card6.appear, .card7.appear {
+  display: block;
+}
+
+.card1.fly, .card2.fly, .card3.fly, .card4.fly, .card5.fly, .card6.fly, .card7.fly {
+  transform: translate(0, -120vh);
+}
+/*
+.card1.disappear {
+  display: none;
+}*/
+
+/*.card2, .card3 {
+  display: none;
+}*/
+
+
+
+.card2.clicked, .card3.clicked, .card4.clicked, .card5.clicked, .card6.clicked, .card7.clicked {
+  display: block;
+}

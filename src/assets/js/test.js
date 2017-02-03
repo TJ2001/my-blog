@@ -1,3 +1,5 @@
+// var test = module.exports = {};
+
 function Card (index, color) {
     this.index = index,
     this.color = color,
@@ -272,7 +274,7 @@ Card.prototype.slide7A = function(){
   });
 };
 
-x = function() {
+exports.test = function test() {
   var card1 = new Card(1, "blue");
   var card2 = new Card(2, "pink");
   var card3 = new Card(3, "orange");
@@ -328,6 +330,8 @@ x = function() {
   card7.slide6A();
   $('#card1').addClass('appear');
 };
+
+// module.exports = test;
 
   // $( document ).ready(function(){
   //   x();
