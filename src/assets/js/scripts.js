@@ -329,9 +329,9 @@ x = function() {
   $('#card1').addClass('appear');
 };
 
-  // $( document ).ready(function(){
-  //   x();
-  //   console.log("script first");
-  // });
+  $( document ).ready(function(){
+    x();
+    console.log("script first");
+  });
 
 // module.exports = Slider;

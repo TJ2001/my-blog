@@ -1,3 +1,6 @@
+/*blue: #25CED1
+orange: #ffa035*/
+
 body,
 html {
     width: 100%;
@@ -6,7 +9,7 @@ html {
 }
 
 .logo{
-   height:25px;
+   height:5vh;
    width:auto;
 }
 
@@ -17,9 +20,14 @@ html {
 
 a {
   font-family: caviar-dreams-bold;
+  font-size: large;
 }
 
 
+h2 {
+  color: #25CED1;
+  background-color: #25CED1;
+}
 
 .navbar-brand {
   position: relative;
@@ -28,19 +36,20 @@ a {
 
 /*ul.nav a:hover { color: #fff !important; }*/
 
-/*.nav > li > a:hover{
-    background-color:#FCC;
-}*/
-
 .custom-link {
   position: relative;
   color: #000;
+  background-color: white;
+  /*border: thick single white;*/
+  border-right: thin solid black;
 }
 
+
 .custom-link:hover {
-  color: #000;
-  text-decoration: underline;
+  position: relative;
+  background-color: #25CED1 !important;
 }
+
 
 .custom-link:before {
   content: "";
@@ -49,12 +58,12 @@ a {
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: #000;
+  background-color: #ffa035;
   visibility: hidden;
   -webkit-transform: scaleX(0);
   transform: scaleX(0);
-  -webkit-transition: all 0.3s ease-in-out 0s;
-  transition: all 0.3s ease-in-out 0s;
+  -webkit-transition: all 0.2s ease-in-out 0s;
+  transition: all 0.2s ease-in-out 0s;
 }
 
 .custom-link:hover:before {
@@ -63,6 +72,22 @@ a {
   transform: scaleX(1);
 }
 
+
+
+
+
+
 .navbar {
     height: 13vh;
   }
+
+    /*<color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="blue">#25CED1</color>
+    <color name="orange">#ffa035</color>
+    <color name="yellow">#FFEB3F</color>
+    <color name="purple">#2134A0</color>
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="darkBlue">#1c73ff</color>*/

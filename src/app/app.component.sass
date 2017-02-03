@@ -1,0 +1,55 @@
+$colorPrimary: #ffa035
+
+body, html
+  width: 100%
+  height: 100%
+
+.logo
+  height: 5vh
+  width: auto
+
+@font-face
+  font-family: caviar-dreams-bold
+  src: url(assets/fonts/caviar-dreams-bold.ttf)
+
+
+a
+  font-family: caviar-dreams-bold
+  font-size: large
+
+.navbar-brand
+  position: relative
+  z-index: 5
+
+ul.nav a:hover
+  color: #colorPrimary !important
+
+.nav > li > a:hover
+  background-color: #colorPrimary
+
+.custom-link
+  position: relative
+  color: #000
+  &:hover
+    color: #000
+    text-decoration: underline
+  &:before
+    content: ""
+    position: absolute
+    width: 100%
+    height: 2px
+    bottom: 0
+    left: 0
+    background-color: #000
+    visibility: hidden
+    -webkit-transform: scaleX(0)
+    transform: scaleX(0)
+    -webkit-transition: all 0.3s ease-in-out 0s
+    transition: all 0.3s ease-in-out 0s
+  &:hover:before
+    visibility: visible
+    -webkit-transform: scaleX(1)
+    transform: scaleX(1)
+
+.navbar
+  height: 13vh

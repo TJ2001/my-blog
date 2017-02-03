@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-// declare var x: any;
-// import '../../assets/js/scripts';
+declare var x: any; import '../../assets/js/scripts';
 
 @Component({
   selector: 'app-slider',
@@ -12,8 +11,8 @@ export class SliderComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    // let x : any;
-    // console.log(x);
+    let x : any;
+    console.log(x);
     console.log("running");
   }
 
