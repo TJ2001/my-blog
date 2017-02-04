@@ -18,11 +18,32 @@ html {
     src: url(assets/fonts/caviar-dreams-bold.ttf);
 }
 
-a {
-  font-family: caviar-dreams-bold;
-  font-size: large;
+@font-face {
+    font-family: playfair-bold;
+    src: url(assets/fonts/PlayfairDisplaySC-Black.ttf);
 }
 
+@font-face {
+    font-family: playfair-regular;
+    src: url(assets/fonts/PlayfairDisplaySC-Regular.ttf);
+}
+
+@font-face {
+    font-family: playfair;
+    src: url(assets/fonts/PlayfairDisplaySC-Bold.ttf);
+}
+
+a {
+  font-family: playfair-regular;
+  font-size: large;
+  margin-top: 2vh;
+}
+
+a.capitalize {
+  font-family: caviar-dreams-bold;
+  font-size: large;
+  height: 9.5vh;
+}
 
 h2 {
   color: #25CED1;
@@ -37,6 +58,9 @@ h2 {
 /*ul.nav a:hover { color: #fff !important; }*/
 
 .custom-link {
+    height: 8.5vh;
+  width: 16vw;
+  text-align: center;
   position: relative;
   color: #000;
   background-color: white;
@@ -72,13 +96,8 @@ h2 {
   transform: scaleX(1);
 }
 
-
-
-
-
-
 .navbar {
-    height: 13vh;
+    height: 10.5vh;
   }
 
     /*<color name="colorPrimary">#3F51B5</color>
