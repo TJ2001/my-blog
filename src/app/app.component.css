@@ -8,7 +8,7 @@ html {
 
 }
 
-.logo{
+.list-menu, .logo {
    height:5vh;
    width:auto;
 }
@@ -55,25 +55,20 @@ h2 {
   z-index: 5;
 }
 
-/*ul.nav a:hover { color: #fff !important; }*/
-
 .custom-link {
-    height: 8.5vh;
+  height: 8.5vh;
   width: 16vw;
   text-align: center;
   position: relative;
   color: #000;
   background-color: white;
-  /*border: thick single white;*/
   border-right: thin solid black;
 }
-
 
 .custom-link:hover {
   position: relative;
   background-color: #25CED1 !important;
 }
-
 
 .custom-link:before {
   content: "";
@@ -110,3 +105,44 @@ h2 {
     <color name="black">#000000</color>
     <color name="white">#FFFFFF</color>
     <color name="darkBlue">#1c73ff</color>*/
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+
+}
+
+.sidenav a {
+    font-family: caviar-dreams-bold;
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: block;
+    transition: 0.3s
+}
+
+.sidenav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}

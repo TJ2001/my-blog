@@ -9,12 +9,14 @@ import {Ng2PageScrollModule} from 'ng2-page-scroll';
 import { AppComponent } from './app.component';
 import { SliderComponent } from './slider/slider.component';
 import { HomeComponent } from './home/home.component';
+import { AboutComponent } from './about/about.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     SliderComponent,
-    HomeComponent
+    HomeComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,

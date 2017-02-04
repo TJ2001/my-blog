@@ -140,36 +140,6 @@ img.shrink{
   background-color: #DDDDDD;
 }
 
-/*.text-box {
-  background-color: gray;
-  position:absolute;
-  bottom: 0;
-}*/
-
-/*.box1 {
-  background-color: #FFFFFF;
-  border-style: solid;
-  border-color: #25CED1;
-  box-shadow: 8px 8px 5px -5px RGBA(0,0,0,.6),
-  inset -3px -3px 5px 0px RGBA(255,255,255,.4);
-}
-
-.box2 {
-  background-color: #FFFFFF;
-  border-style: solid;
-  border-color: #FFA035;
-  box-shadow: 8px 8px 5px -5px RGBA(0,0,0,.6),
-  inset -3px -3px 5px 0px RGBA(255,255,255,.4);
-}
-
-.box3{
-  background-color: #FFFFFF;
-  border-style: solid;
-  border-color: #FFEB3F;
-  box-shadow: 8px 8px 5px -5px RGBA(0,0,0,.6),
-  inset -3px -3px 5px 0px RGBA(255,255,255,.4);
-}*/
-
 .articleImage {
   height: 100%;
 }

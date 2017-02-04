@@ -289,43 +289,45 @@ x = function() {
     card1.slide6();
     card1.slide7();
   };
+
   card1.initiate();
-  card2.slide1();
-  card2.slide3A();
-  card2.slide4A();
-  card2.slide5();
-  card2.slide6();
-  card2.slide7A();
-  card3.slide1();
-  card3.slide2();
-  card3.slide4A();
-  card3.slide5();
-  card3.slide6();
-  card3.slide7();
-  card4.slide1();
-  card4.slide2();
-  card4.slide3A();
-  card4.slide5A();
-  card4.slide6();
-  card4.slide7();
-  card5.slide1();
-  card5.slide2();
-  card5.slide3();
-  card5.slide4A();
-  card5.slide6A();
-  card5.slide7A();
-  card6.slide1();
-  card6.slide2A();
-  card6.slide3();
-  card6.slide4A();
-  card6.slide5();
-  card6.slide7();
-  card7.slide1();
-  card7.slide2();
-  card7.slide3();
-  card7.slide4A();
-  card7.slide5A();
-  card7.slide6A();
+    card2.slide1();
+    card2.slide3A();
+    card2.slide4A();
+    card2.slide5();
+    card2.slide6();
+    card2.slide7A();
+    card3.slide1();
+    card3.slide2();
+    card3.slide4A();
+    card3.slide5();
+    card3.slide6();
+    card3.slide7();
+    card4.slide1();
+    card4.slide2();
+    card4.slide3A();
+    card4.slide5A();
+    card4.slide6();
+    card4.slide7();
+    card5.slide1();
+    card5.slide2();
+    card5.slide3();
+    card5.slide4A();
+    card5.slide6A();
+    card5.slide7A();
+    card6.slide1();
+    card6.slide2A();
+    card6.slide3();
+    card6.slide4A();
+    card6.slide5();
+    card6.slide7();
+    card7.slide1();
+    card7.slide2();
+    card7.slide3();
+    card7.slide4A();
+    card7.slide5A();
+    card7.slide6A();
+
   $('#card1').addClass('appear');
 };
 
@@ -333,5 +335,34 @@ x = function() {
     x();
     console.log("script first");
   });
+
+  function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";;
+      document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+  }
+
+  function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+      document.body.style.backgroundColor = "white";
+  }
+
+
+  function openClose() {
+    var width = $("#mySidenav").width();
+    if (width == 250){
+      closeNav();
+    } else if (width == 0){
+      openNav();
+    }
+  }
+
+  // $(function() {
+  //   var iconWidth = $(".list-menu").width
+  //   if(iconWidth) <= 1000) {
+  //     $(".list-menu").each(function() {
+  //       $(this).attr("src", $(this).attr("src").replace("images/620x410/", "images/310x205/"));
+  //     });
+  //   }
+  // });
 
 // module.exports = Slider;
