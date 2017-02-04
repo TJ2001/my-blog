@@ -337,9 +337,14 @@ x = function() {
   });
 
   function openNav() {
-      document.getElementById("mySidenav").style.width = "250px";;
       document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+      if(window.matchMedia("(min-width: 1000px)").matches){
+        document.getElementById("mySidenav").style.width = "400px";
+      }else if (window.matchMedia("(max-width: 999px)").matches){
+        document.getElementById("mySidenav").style.width = "300px";
+      };
   }
+
 
   function closeNav() {
       document.getElementById("mySidenav").style.width = "0";
@@ -349,10 +354,11 @@ x = function() {
 
   function openClose() {
     var width = $("#mySidenav").width();
-    if (width == 250){
-      closeNav();
-    } else if (width == 0){
+    console.log(width);
+    if (width == 0){
       openNav();
+    } else {
+      closeNav();
     }
   }
 

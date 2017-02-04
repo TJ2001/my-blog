@@ -39,12 +39,6 @@ a {
   margin-top: 2vh;
 }
 
-a.capitalize {
-  font-family: caviar-dreams-bold;
-  font-size: large;
-  height: 9.5vh;
-}
-
 h2 {
   color: #25CED1;
   background-color: #25CED1;
@@ -57,13 +51,27 @@ h2 {
 
 .custom-link {
   height: 8.5vh;
-  width: 16vw;
   text-align: center;
   position: relative;
+  width: 16vw;
   color: #000;
   background-color: white;
   border-right: thin solid black;
 }
+
+
+
+/*@media screen and (max-width: 960px){
+  .custom-link {
+      width: 50px;
+  }
+}*/
+
+/*@media screen and (min-width: 960px) {
+    .custom-link {
+      width: 16vw;
+    }
+}*/
 
 .custom-link:hover {
   position: relative;
@@ -108,17 +116,33 @@ h2 {
 
 .sidenav {
     height: 100%;
-    width: 0;
     position: fixed;
-    z-index: 1;
+    width: 0;
+    right: 0px;
+    z-index: 4;
     top: 0;
-    left: 0;
-    background-color: #111;
+    background-color: black;
     overflow-x: hidden;
-    transition: 0.5s;
+    transition: ease-in-out 0.5s;
     padding-top: 60px;
-
 }
+
+
+
+
+
+    /*.sidenav {
+      width: 0;
+      padding-right: 100px;*/
+      /*transorm: translate(-500px, -500px );
+      transition: traslate(500ms ease-in-out);*/
+    /*}
+    .sidenav.clicked .sidenav {
+      -webkit-transform: translate(-500px);
+              transform: translate(-200px);
+    }*/
+
+
 
 .sidenav a {
     font-family: caviar-dreams-bold;
@@ -145,4 +169,22 @@ h2 {
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
+}
+
+   /*.collapse {
+   @media (max-width: 960px) {
+       display: none !important;
+   }*/
+   .custom-link {
+     display: none;
+     height: 8.5vh;
+     text-align: left;
+     color: #000;
+     background-color: white;
+     border-right: none;
+   }
+   a {
+     font-size: medium;
+     margin-top: 2vh;
+   }
 }

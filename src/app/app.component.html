@@ -1,23 +1,30 @@
 <nav class="navbar navbar-default navbar-fixed-top">
   <div class="container-fluid">
-
     <div class="navbar-header">
       <a class="navbar-brand" routerLink="home"><img class="logo pull-left" src="assets/images/logo.png"></a>
     </div>
      <!-- LINKS for navbar -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    <div class="navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
         <li><a href="../main/stories/stranger/index.html" class="custom-link">Stories </a></li>
-        <li><a routerLink="slider" class="custom-link">TACTICS</a></li>
+        <li><a routerLink="slider" class="custom-link">SLIDER</a></li>
         <li><a href="community.html" class="custom-link">Community</a></li>
         <li><a class="custom-link" onclick="openClose()">Clients</a></li>
-        <li><a href="thanks.html"  class="custom-link">CONTACT</a></li>
-        <li><a onclick="openClose()"><img class="list-menu" src="assets/icons/list-menu.svg"></a></li>
+        <li><a routerLink="about"  class="custom-link">ABOUT</a></li>
+        <!-- <li><a onclick="openClose()"><img class="list-menu" src="assets/icons/list-menu.svg"></a></li> -->
       </ul>
+      <ul class="nav navbar-nav navbar-right">
+       <li class="dropdown">
+         <a role="button" aria-expanded="false"><img onclick="openClose()" src="assets/icons/list-menu-black.svg" alt=""></a>
+       </li>
+     </ul>
      </div>
 
    </div>
  </nav>
+
+  <router-outlet></router-outlet>
+
 
  <div id="mySidenav" class="sidenav">
    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
@@ -27,8 +34,8 @@
    <a href="#">Contact</a>
  </div>
 
- <router-outlet></router-outlet>
 
- <my-jquery></my-jquery>
+
+
 
 <div class="app"><h2>app component css</h2></div>
