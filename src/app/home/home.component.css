@@ -39,7 +39,7 @@ p {
     padding-bottom: 225px;
     text-align: center;
     color: #f8f8f8;
-    background: url(../assets/images/power.jpg) no-repeat center center;
+    background: url(../../assets/power.jpg) no-repeat center center;
     background-size: cover;
 }
 
@@ -50,7 +50,7 @@ p {
 
 @font-face {
     font-family: coolvetica;
-    src: url(assets/fonts/coolvetica.ttf);
+    src: url(../../assets/fonts/caviar-dreams-bold.ttf);
 }
 
 h3 {
