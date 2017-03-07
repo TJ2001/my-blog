@@ -10,13 +10,19 @@ import { AppComponent } from './app.component';
 import { SliderComponent } from './slider/slider.component';
 import { HomeComponent } from './home/home.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { SplashComponent } from './splash/splash.component';
+import { BoxesComponent } from './boxes/boxes.component';
+import { TestComponent } from './test/test.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     SliderComponent,
     HomeComponent,
-    NavbarComponent
+    NavbarComponent,
+    SplashComponent,
+    BoxesComponent,
+    TestComponent
   ],
   imports: [
     BrowserModule,
