@@ -1,0 +1,55 @@
+.artboard {
+  height: 700px;
+  background=color: #131413;
+}
+
+.artboard2 {
+  background=color: #131413;
+  display: none;
+}
+
+.feature-image {
+  width: 98.75vw;
+}
+
+
+@media (max-width: 995px){
+  .feature-image {
+    width: 98vw;
+  }
+}
+
+@media (max-width: 400px){
+  .artboard {
+    width: 0;
+    height: 0;
+    display: none;
+  }
+  .artboard2 {
+    background=color: #131413;
+    display: block;
+  }
+  .imageOne {
+    float: left;
+  }
+}
+
+h3{
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+#imageOne {
+  width: 100vw;
+
+}
+
+#imageTwo {
+  width: 100vw;
+
+}
+
+/*
+.imgContainer{
+    float:left;
+}*/

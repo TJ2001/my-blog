@@ -15,6 +15,9 @@ import { BoxesComponent } from './boxes/boxes.component';
 import { TestComponent } from './test/test.component';
 import { ContactComponent } from './contact/contact.component';
 import { FeatureComponent } from './feature/feature.component';
+import { MeditationComponent } from './meditation/meditation.component';
+import { StoryComponent } from './story/story.component';
+import { CommunityComponent } from './community/community.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +29,10 @@ import { FeatureComponent } from './feature/feature.component';
     BoxesComponent,
     TestComponent,
     ContactComponent,
-    FeatureComponent
+    FeatureComponent,
+    MeditationComponent,
+    StoryComponent,
+    CommunityComponent
   ],
   imports: [
     BrowserModule,

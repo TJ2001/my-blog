@@ -30,6 +30,18 @@ body {
   width: 35%;
 }
 
+@media (max-width: 600px){
+  .column1 {
+    width: 0;
+    display: none;
+  }
+  .column2 {
+    width: 100%;
+  }
+}
+
+
+
 * {
   position: relative;
   box-sizing: border-box;
@@ -40,9 +52,9 @@ body {
 /*form*/
 .form.active {
   padding: 10px 20px 20px 20px;
-  background: #0C510F;
+  background: #70B4AA;
   border: 6px solid #cb9a4b;
-  box-shadow: 0px 30px 20px -20px rgba(0,0,0,0.3);
+  box-shadow: 0px 30px 20px -20px rgba(0,0,0,0.5);
   overflow: hidden;
   width: 320px;
   height: 400px;
@@ -115,8 +127,8 @@ h1 {
 }
 /* mail icon background */
 .form {
-  width: 64px;
-  height: 64px;
+  width: 100px;
+  height: 100px;
   background: url(../../assets/images/small-pen.png) no-repeat center center;
   background-size: 64px;
   border: 6px solid #cb9a4b;
