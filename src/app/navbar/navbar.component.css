@@ -17,34 +17,25 @@ html {
   font-family: caviar-dreams-bold;
   src: url(../../assets/fonts/caviar-dreams-bold.ttf);
 }
-/*
-@font-face {
-font-family: playfair-bold;
-src: url(../../assets/fonts/PlayfairDisplaySC-Black.ttf);
-}
-
-@font-face {
-font-family: playfair-regular;
-src: url(../../assets/fonts/PlayfairDisplaySC-Regular.ttf);
-}
-
-@font-face {
-font-family: playfair;
-src: url(../../assets/fonts/PlayfairDisplaySC-Bold.ttf);
-}*/
 
 .navbar-default {
-  height: 9.5vh;
-  background-color: #e7e7e7;
+  height: 10vh;
+  background-color: #DDDDDD;
+  border-bottom: 5px solid #0C510F;
+
 }
+
+.navbar-nav>li>a {
+  color: #131413;
+}
+
+.navbar-nav>li>a:hover {
+  color: #0C510F;
+}
+
 
 a {
   font-family: playfair-regular;
-}
-
-h2 {
-  color: #25CED1;
-  background-color: #25CED1;
 }
 
 .navbar-brand {
@@ -58,27 +49,28 @@ h2 {
   text-align: center;
   position: relative;
   width: 16vw;
-  color: #000;
-  background-color: #e7e7e7;
-  border-right: thin solid black;
-  font-size: 2.75em;
+  text-transform: uppercase;
+  color: #131413;
+  background-color: #DDDDDD;
+  border-right: thin solid #131413;
+  font-size: 2.25em;
 }
 
 @media screen and (max-width: 1000px){
   .custom-link {
-    font-size: 1.5em;
+    font-size: 1.25em;
   }
 }
 
 @media screen and (max-width: 1300px) and (min-width: 1000px) {
   .custom-link {
-    font-size: 2em;
+    font-size: 1.75em;
   }
 }
 
 .custom-link:hover {
   position: relative;
-  background-color: #25CED1 !important;
+  background-color: #ADFFB6 !important;
 }
 
 .custom-link:before {
@@ -86,9 +78,9 @@ h2 {
   position: absolute;
   width: 100%;
   height: 3px;
-  bottom: 0;
+  top: 0;
   left: 0;
-  background-color: blue;
+  background-color: #0C510F;
   visibility: hidden;
   -webkit-transform: scaleX(0);
   transform: scaleX(0);
