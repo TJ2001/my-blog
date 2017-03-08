@@ -49,6 +49,10 @@ h3{
 
 }
 
+.bold {
+  font-weight: bold;
+}
+
 /*
 .imgContainer{
     float:left;

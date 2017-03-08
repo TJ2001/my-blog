@@ -1,0 +1,18 @@
+import { ModuleWithProviders } from '@angular/core';
+import { Routes, RouterModule } from '@angular/router';
+
+import { AppComponent } from '../app.component';
+import { SliderComponent } from '../slider/slider.component';
+import { HomeComponent } from '../home/home.component';
+import { MeditationComponent} from '../meditation/meditation.component';
+import { StoryComponent} from '../story/story.component';
+
+
+
+export const router: Routes = [
+  { path: 'slider', component: SliderComponent },
+  { path: 'meditation', component: MeditationComponent },
+  { path: 'story', component: StoryComponent },
+];
+
+export const routes: ModuleWithProviders = RouterModule.forRoot(router);
