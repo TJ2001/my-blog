@@ -1,0 +1,3 @@
+side-nav javascript function to do width of screen
+splash start button style and go to slider
+slider page

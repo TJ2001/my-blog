@@ -8,3 +8,5 @@
 <color name="black">#000000</color>
 <color name="white">#FFFFFF</color>
 <color name="darkBlue">#1c73ff</color>*/
+
+primary green #0C510F

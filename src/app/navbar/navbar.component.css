@@ -49,7 +49,7 @@ a {
   text-align: center;
   position: relative;
   width: 16vw;
-  text-transform: uppercase;
+  /*text-transform: uppercase;*/
   color: #131413;
   background-color: #DDDDDD;
   border-right: thin solid #131413;
@@ -68,6 +68,15 @@ a {
   }
 }
 
+@media screen and (max-width: 768px){
+  .navbar-brand {
+    display: none;
+  }
+  .logo {
+    height: 8vh;
+  }
+}
+
 .custom-link:hover {
   position: relative;
   background-color: #ADFFB6 !important;
@@ -80,7 +89,8 @@ a {
   height: 3px;
   top: 0;
   left: 0;
-  background-color: #0C510F;
+  /*background-color: #0C510F;*/
+  background-color: orange;
   visibility: hidden;
   -webkit-transform: scaleX(0);
   transform: scaleX(0);
@@ -95,6 +105,24 @@ a {
   transform: scaleX(1);
 }
 
+.collapse {
+  @media (max-width: 960px) {
+    display: none !important;
+  }
+  .custom-link {
+    display: none;
+    height: 8.5vh;
+    text-align: left;
+    color: #000;
+    background-color: white;
+    border-right: none;
+  }
+  a {
+    font-size: medium;
+    margin-top: 2vh;
+  }
+}
+
 .nav {
   position: fixed;
   right: 10%;
@@ -107,18 +135,18 @@ a {
   right: 0px;
   z-index: 4;
   top: 0;
-  background-color: black;
+  background-color: #DDDDDD;
   overflow-x: hidden;
   transition: ease-in-out 0.5s;
   padding-top: 60px;
 }
 
 .sidenav a {
-  font-family: caviar-dreams-bold;
+  font-family: "caviar-dreams-bold";
   padding: 8px 8px 8px 32px;
   text-decoration: none;
   font-size: 25px;
-  color: white;
+  color: #121212;
   display: block;
   transition: 0.3s
 }
@@ -138,24 +166,6 @@ a {
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
-}
-
-.collapse {
-  @media (max-width: 960px) {
-    display: none !important;
-  }
-  .custom-link {
-    display: none;
-    height: 8.5vh;
-    text-align: left;
-    color: #000;
-    background-color: white;
-    border-right: none;
-  }
-  a {
-    font-size: medium;
-    margin-top: 2vh;
-  }
 }
 
 .line {

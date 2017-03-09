@@ -13,15 +13,16 @@ export class ContactComponent implements OnInit {
   ngOnInit() {
     $(".form").on('click', function(){
       $(this).addClass('active');
-      // $(".disappear").css("display", "none");
+      $("input").addClass('active');
+      $("textarea").addClass('active');
     });
 
     $(".submit").on('click', function() {
       $(this).parent().parent().hide(300);
-      $(".ok_message").addClass("active");
+      $(".thanks").addClass("active");
     });
 
-    $(".ok_message").on('click', function() {
+    $(".thanks").on('click', function() {
       $(this).removeClass("active");
       $(".form").removeClass("active").show();
     });
