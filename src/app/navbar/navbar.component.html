@@ -13,7 +13,7 @@
   <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
     <ul class="nav navbar-nav">
       <li><a class="custom-link" routerLink="story">latest</a></li>
-      <li><a class="custom-link" routerLink="">spotlight</a></li>
+      <li><a class="custom-link" routerLink="community">community</a></li>
       <li><a class="custom-link" routerLink="meditation">meditation</a></li>
       <li><a class="custom-link" routerLink="about">about</a></li>
       <li><a class="custom-link" routerLink="slider">start</a></li>
@@ -25,13 +25,18 @@
 </div> -->
 
 <div id="mySidenav" class="sidenav">
-  <div class="square">
 
-  </div>
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <a (click)="closeNav()" routerLink="latest">latest</a>
-  <a (click)="closeNav()" routerLink="home">main</a>
-  <a (click)="closeNav()" href="#" routerLink="meditation">meditation</a>
-  <a (click)="closeNav()" routerLink="home">start</a>
-  <a (click)="closeNav()" href="#" routerLink="home">about</a>
+  <div class="column1">
+    <a (click)="closeNav()" routerLink="home" class="section1 section"></a>
+    <a (click)="closeNav()" routerLink="story" class="section2 section"></a>
+  </div>
+  <div class="column2">
+    <a (click)="closeNav()" href="#" routerLink="meditation" class="section3 section"></a>
+    <a (click)="closeNav()" href="#" routerLink="about" class="section4 section"></a>
+  </div>
+
+
+  <a (click)="closeNav()" routerLink="slider" class="section5"></a>
+
 </div>

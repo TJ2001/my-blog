@@ -1,0 +1,36 @@
+.artboard {
+  margin-top: 100px;
+}
+
+span {
+  font-weight: bold;
+}
+
+h1 {
+  text-align: center;
+  font-family: Georgia1, Georgia, serif;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+img {
+  width: 95%;
+  margin-left: 2.5%;
+  margin-rright: 2.5%;
+  margin-bottom: 20px;
+}
+
+
+@media (min-width: 900px){
+  .artboard {
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+  }
+
+  img {
+    width: 80%;
+    margin-left: 10%;
+    margin-rright: 10%;
+    margin-bottom: 20px;
+  }
+}

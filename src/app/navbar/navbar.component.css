@@ -157,6 +157,7 @@ a {
 }
 
 .sidenav {
+  margin-top: 25px;
   height: 100%;
   position: fixed;
   width: 0;
@@ -191,6 +192,62 @@ a {
   margin-left: 50px;
 }
 
+.column1 {
+
+  width: 115px;
+  float: left;
+}
+
+.column2 {
+  width: 150px;
+  float: left;
+}
+
+.section1 {
+  width: 100px;
+  height: 80px;
+  z-index: 5;
+  background-image: url(../../assets/images/home-button.png);
+  background-size: cover;
+}
+
+.section2 {
+  width: 100px;
+  height: 80px;
+  z-index: 5;
+  background-image: url(../../assets/images/new-button.png);
+  background-size: cover;
+}
+
+.section3 {
+  width: 100px;
+  height: 80px;
+  z-index: 5;
+  background-image: url(../../assets/images/meditation-button.png);
+  background-size: cover;
+}
+
+.section4 {
+  width: 100px;
+  height: 80px;
+  z-index: 5;
+  background-image: url(../../assets/images/about-button.png);
+  background-size: cover;
+}
+
+.section5 {
+  width: 200px;
+  height: 80px;
+  z-index: 5;
+  margin-top: 170px;
+  background-image: url(../../assets/images/start-button.png);
+  background-size: cover;
+}
+
+.section {
+
+}
+
 @media (max-height: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
@@ -199,6 +256,8 @@ a {
     margin-top: -1%;
   }
 }
+
+
 
 .line {
   width: 100%;
