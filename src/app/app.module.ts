@@ -18,6 +18,7 @@ import { FeatureComponent } from './feature/feature.component';
 import { MeditationComponent } from './meditation/meditation.component';
 import { StoryComponent } from './story/story.component';
 import { CommunityComponent } from './community/community.component';
+import { AboutComponent } from './about/about.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { CommunityComponent } from './community/community.component';
     FeatureComponent,
     MeditationComponent,
     StoryComponent,
-    CommunityComponent
+    CommunityComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,

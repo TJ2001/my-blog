@@ -22,7 +22,6 @@ html {
   height: 10vh;
   background-color: #DDDDDD;
   border-bottom: 5px solid #0C510F;
-
 }
 
 .navbar-nav>li>a {
@@ -74,7 +73,7 @@ a {
   }
 }
 
-@media (max-width: 767px){
+@media (max-width: 767px) and (min-width: 450px){
   .navbar-brand {
     display: none;
   }
@@ -83,6 +82,25 @@ a {
   }
   .navbar-default {
     height: 10%;
+  }
+}
+
+@media (max-width: 450px){
+  .navbar-brand {
+    display: none;
+  }
+  #logo {
+    margin-top: -1.5%;
+    margin-right: -1%;
+    height: 10vh;
+
+  }
+  .navbar-default {
+    height: 10%;
+  }
+  .navbar-header {
+    padding: 0;
+    margin: 0;
   }
 }
 
@@ -130,6 +148,7 @@ a {
     font-size: medium;
     margin-top: 2vh;
   }
+
 }
 
 .nav {
@@ -142,7 +161,7 @@ a {
   position: fixed;
   width: 0;
   right: 0px;
-  z-index: 4;
+  z-index: 6;
   top: 0;
   background-color: #DDDDDD;
   overflow-x: hidden;
@@ -172,9 +191,13 @@ a {
   margin-left: 50px;
 }
 
-@media screen and (max-height: 450px) {
+@media (max-height: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
+  #logo {
+    height: 50px;
+    margin-top: -1%;
+  }
 }
 
 .line {

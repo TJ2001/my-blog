@@ -9,9 +9,9 @@ export class NavbarComponent {
 
   constructor() { }
   openNav() {
-    if(window.matchMedia("(min-width: 400px)").matches){
+    if(window.matchMedia("(min-width: 450px)").matches){
       document.getElementById("mySidenav").style.width = "300px";
-    }else if (window.matchMedia("(max-width: 400px)").matches){
+    }else if (window.matchMedia("(max-width: 450px)").matches){
       document.getElementById("mySidenav").style.width = "100%";
     };
   }
