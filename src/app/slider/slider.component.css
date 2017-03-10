@@ -4,6 +4,7 @@
   padding-top: 50px;
   background-color: #4f4f4f;
   overflow: hidden;
+  height: 100vh;
 }
 
 .center-div
@@ -286,6 +287,16 @@ td {
 
 .ch-item:hover .ch-info p {
 	opacity: 1;
+}
+
+@media (min-width: 1125px) {
+  .center-div  {
+       width: 50%;
+       height: 1000px;
+  }
+  .card {
+    margin-top: 50px;
+  }
 }
 
 @media (min-width: 860px) and (max-width: 1125px) {

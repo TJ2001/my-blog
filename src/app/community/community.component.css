@@ -1,5 +1,5 @@
 .artboard {
-  margin-top: 100px;
+  margin-top: 200px;
 }
 
 .bold {
@@ -19,6 +19,9 @@
 }
 
 @media (max-width: 800px) {
+  .artboard {
+    margin-top: 100px;
+  }
   h5 {
     margin: 0 1% 1% 1%;
   }

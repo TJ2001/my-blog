@@ -19,9 +19,13 @@
   }
 }*/
 
-@media (min-width: 1300px){
+@media (min-width: 1600px){
   .artboard {
-    height: 900px;
+    height: 950px;
+  }
+  .feature-image {
+    width: 80%;
+    margin-left: 10%;
   }
   p {
     margin-left: 400px;
@@ -29,7 +33,22 @@
   }
 }
 
-@media (min-width: 900px) and (max-width: 1300px){
+
+@media (max-width: 1600px) and (min-width: 1350px){
+  .artboard {
+    height: 800px;
+  }
+  .feature-image {
+    width: 80%;
+    margin-left: 10%;
+  }
+  p {
+    margin-left: 400px;
+    margin-right: 400px;
+  }
+}
+
+@media (min-width: 900px) and (max-width: 1350px){
   .artboard {
     height: 700px;
   }

@@ -62,7 +62,14 @@ img.shrink{
   margin-bottom: 20px;
 }
 
-@media (min-width: 995px) {
+@media (min-width: 1400px){
+    .boxes-background {
+      padding-top: 50px;
+      height: 950px;
+    }
+}
+
+@media (min-width: 995px) and (max-width: 1400px) {
   .box {
     height: 80%;
     display: inline-block;

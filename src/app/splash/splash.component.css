@@ -57,3 +57,10 @@ h1  {
 .journey {
   font-size: 1.5em;
 }
+
+@media (min-width: 1600px){
+  .intro-header {
+      padding-top: 300px;
+      padding-bottom: 425px;
+    }
+}
