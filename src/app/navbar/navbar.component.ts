@@ -1,15 +1,33 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-navbar',
+  selector: 'navbar',
   templateUrl: './navbar.component.html',
   styleUrls: ['./navbar.component.scss']
 })
-export class NavbarComponent implements OnInit {
+export class NavbarComponent {
 
   constructor() { }
-
-  ngOnInit() {
+  openNav() {
+    if(window.matchMedia("(min-width: 450px)").matches){
+      document.getElementById("mySidenav").style.width = "300px";
+    }else if (window.matchMedia("(max-width: 450px)").matches){
+      document.getElementById("mySidenav").style.width = "100%";
+    };
   }
 
+  closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.body.style.backgroundColor = "white";
+  }
+
+  openClose() {
+    var width = document.getElementById("mySidenav").offsetWidth;
+    console.log(width);
+    if (width == 0){
+      this.openNav();
+    } else {
+      this.closeNav();
+    }
+  }
 }
