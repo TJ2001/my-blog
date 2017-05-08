@@ -1,4 +1,9 @@
-$nav-height: 75px;
+$nav-height: 50px;
+
+@font-face {
+  font-family: caviar-dreams-bold;
+  src: url(../../assets/fonts/caviar-dreams-bold.ttf);
+}
 
 body,
 html {
@@ -7,32 +12,27 @@ html {
 
 }
 
-
-@font-face {
-  font-family: caviar-dreams-bold;
-  src: url(../../assets/fonts/caviar-dreams-bold.ttf);
-}
-
 .navbar {
   width: 100%;
-  height: $nav-height + 1px;
+  height: $nav-height;
   background-color: #DDDDDD;
   border-bottom: 5px solid #0C510F;
   display: flex;
   .navbar-margin {
     width: 20%;
-    height: 100%;
+    height: $nav-height;
     .logo {
       margin: 5px 10px;
       max-width:90%;
       max-height:90%;
+      cursor: pointer;
     }
   }
 }
 
 .custom-link {
   height: $nav-height;
-  padding-top: 25px;
+  // padding-top: 25px;
   text-align: center;
   position: relative;
   width: 16vw;
@@ -41,6 +41,7 @@ html {
   border-right: thin solid #131413;
   border-bottom: 5px solid #0C510F;
   font-size: 2.25em;
+  cursor: pointer;
   a {
     font-family: playfair-regular;
     text-decoration: none;
@@ -49,50 +50,6 @@ html {
 
 .border-left {
   border-left: thin solid #131413;
-}
-
-
-
-@media (max-width: 1300px) and (min-width: 1000px) {
-  .custom-link {
-    font-size: 1.55em;
-  }
-}
-
-@media (max-width: 1000px) and (min-width: 768px){
-  .custom-link {
-    font-size: 1.25em;
-  }
-}
-
-@media (max-width: 767px) and (min-width: 450px){
-  .navbar-brand {
-    display: none;
-  }
-  .logo {
-    height: 8vh;
-  }
-  .navbar-default {
-    height: 10%;
-  }
-}
-
-@media (max-width: 450px){
-  .navbar-brand {
-    display: none;
-  }
-  #logo {
-    margin-top: -1.5%;
-    margin-right: -1%;
-
-  }
-  .navbar-default {
-    height: 10%;
-  }
-  .navbar-header {
-    padding: 0;
-    margin: 0;
-  }
 }
 
 .custom-link:hover {
@@ -233,8 +190,46 @@ html {
   background-size: cover;
 }
 
-.section {
+@media (max-width: 1300px) and (min-width: 1000px) {
+  .custom-link {
+    font-size: 1.55em;
+  }
+}
 
+@media (max-width: 1000px) and (min-width: 768px){
+  .custom-link {
+    font-size: 1.25em;
+  }
+}
+
+@media (max-width: 767px) and (min-width: 450px){
+  .navbar-brand {
+    display: none;
+  }
+  .logo {
+    height: 8vh;
+  }
+  .navbar-default {
+    height: 10%;
+  }
+}
+
+@media (max-width: 450px){
+  .navbar-brand {
+    display: none;
+  }
+  #logo {
+    margin-top: -1.5%;
+    margin-right: -1%;
+
+  }
+  .navbar-default {
+    height: 10%;
+  }
+  .navbar-header {
+    padding: 0;
+    margin: 0;
+  }
 }
 
 @media (max-height: 450px) {

@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-splash',
+  selector: 'splash',
   templateUrl: './splash.component.html',
   styleUrls: ['./splash.component.scss']
 })

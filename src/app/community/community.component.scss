@@ -1,0 +1,29 @@
+.artboard {
+  margin-top: 100px;
+}
+
+.bold {
+  font-weight: bold;
+  font-size: 2em;
+  font-family: Georgia1, Georgia, serif;
+}
+
+@media (min-width: 1000px) {
+  h5 {
+    margin: 0 2% 2% 1%;
+  }
+
+  iframe {
+    margin-left: 20%;
+  }
+}
+
+@media (max-width: 800px) {
+  h5 {
+    margin: 0 1% 1% 1%;
+  }
+
+  iframe {
+    width: 100%;
+  }
+}
