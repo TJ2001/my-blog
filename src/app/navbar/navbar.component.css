@@ -1,11 +1,7 @@
-/*blue: #25CED1
-orange: #ffa035*/
-
 body,
 html {
   width: 100%;
   height: 100%;
-
 }
 
 .list-menu, .logo {
@@ -19,7 +15,7 @@ html {
 }
 
 .navbar-default {
-  height: 10vh;
+  height: calc(5vh + 5px);
   background-color: #DDDDDD;
   border-bottom: 5px solid #0C510F;
 }
@@ -43,12 +39,10 @@ a {
 }
 
 .custom-link {
-  height: 9.5vh;
-  padding-top: 25px;
+  height: 5vh;
   text-align: center;
   position: relative;
   width: 16vw;
-  /*text-transform: uppercase;*/
   color: #131413;
   background-color: #DDDDDD;
   border-right: thin solid #131413;
@@ -242,10 +236,6 @@ a {
   margin-top: 170px;
   background-image: url(../../assets/images/start-button.png);
   background-size: cover;
-}
-
-.section {
-
 }
 
 @media (max-height: 450px) {
