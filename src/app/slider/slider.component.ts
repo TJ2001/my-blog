@@ -37,23 +37,6 @@ export class SliderComponent implements OnInit {
     });
   }
 
-  function animationTwo(trigger: string, cardId: string, otherCard: string){
-    $(trigger).click(function(){
-      if($(otherCard).hasClass('appear')) {
-        $(otherCard).addClass('fly');
-        setTimeout(function(){
-          $(otherCard).removeClass('appear');
-          $(cardId).addClass('appear');
-        }, 500);
-        $(cardId).addClass('fadeInUp');
-        $(cardId).one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
-          $(cardId).removeClass('fadeInUp');
-          $(otherCard).removeClass('fly');
-        });
-      }
-    });
-  }
-
   Card.prototype.slide1 = function(){
     let trigger = ".trigger" + this.index;
     let cardId = "#card" + this.index;
@@ -112,15 +95,37 @@ export class SliderComponent implements OnInit {
   let card7 = new Card(7, "black");
 
   card1.initiate = function(){
-    card1.slide2();
-    card1.slide3();
-    card1.slide4();
-    card1.slide5();
-    card1.slide6();
-    card1.slide7();
+
   };
 
+  let slides = ['slide1', 'slide2', 'slide3', 'slide4', 'slide5', 'slide6']
+
+  // for (let slide of slides){
+  //   console.log(slide);
+  //   card1[slide]();
+  // }
+
+
+  for (let i = 2; i < 8; i++) {
+    // if (i = 2){}
+    // else {
+      console.log(i);
+      let pushUp = "slide" + i.toString();
+      card1[pushUp]();
+    // }
+  }
+
+
   card1.initiate();
+
+
+  // card1.slide2();
+  // card1.slide3();
+  // card1.slide4();
+  // card1.slide5();
+  // card1.slide6();
+  // card1.slide7();
+
   card2.slide1();
   card2.slide3();
   card2.slide4();
