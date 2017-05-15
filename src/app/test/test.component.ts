@@ -6,8 +6,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./test.component.css']
 })
 export class TestComponent implements OnInit {
+  index: string;
+  color: string;
+  width: "500px";
+  height: "500px";
 
-  constructor() { }
+
+  constructor() {
+   }
 
   ngOnInit() {
   }
