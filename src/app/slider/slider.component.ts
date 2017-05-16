@@ -101,21 +101,14 @@ export class SliderComponent implements OnInit {
   for (let i = 2; i < 8; i++) {
       let pushUp = "slide" + i.toString();
       card1[pushUp]();
-      let cardNumber:number = +i;
-      if (cardNumber = 2) {
-        let slides = ["slide1", "slide3", "slide4", "slide5", "slide6", "slide7"];
-        for (let slide of slides){
-          card2[slide]();
-        }
-      }
   }
 
-  // card2.slide1();
-  // card2.slide3();
-  // card2.slide4();
-  // card2.slide5();
-  // card2.slide6();
-  // card2.slide7();
+  card2.slide1();
+  card2.slide3();
+  card2.slide4();
+  card2.slide5();
+  card2.slide6();
+  card2.slide7();
 
   card3.slide1();
   card3.slide2();

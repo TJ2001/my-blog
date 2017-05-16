@@ -6,6 +6,7 @@ html {
 }
 
 .intro-header {
+    height: 80vh;
     padding-top: 150px;
     padding-bottom: 300px;
     text-align: center;

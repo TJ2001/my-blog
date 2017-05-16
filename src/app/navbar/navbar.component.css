@@ -7,11 +7,12 @@ html {
 .list-menu, .logo {
   height:5vh;
   width:auto;
+  margin-top: -15px;
 }
 
 @font-face {
-  font-family: caviar-dreams-bold;
-  src: url(../../assets/fonts/caviar-dreams-bold.ttf);
+  font-family: crushed;
+  src: url(../../assets/fonts/crushed.ttf);
 }
 
 .navbar-default {
@@ -30,7 +31,7 @@ html {
 
 
 a {
-  font-family: playfair-regular;
+  font-family: crushed;
 }
 
 .navbar-brand {
