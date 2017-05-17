@@ -30,11 +30,28 @@
   margin-bottom: 50px;
 }
 
+.feature-image {
+  height: 200px;
+  /*width: 500px;*/
+}
+
+hr {
+    display: block;
+    -webkit-margin-before: 0.5em;
+    -webkit-margin-after: 0.5em;
+    -webkit-margin-start: auto;
+    -webkit-margin-end: auto;
+    border-style: inset;
+    border-width: 1px;
+}
+
 .column1 {
   padding-left: 2%;
   padding-elft: 2%;
   width: 50%;
   float: left;
+  height: 250px;
+  /*border-top: 2.5px solid gray;*/
 }
 
 .column2 {
@@ -43,6 +60,8 @@
   padding-left: 2%;
   padding-elft: 2%;
   float: right;
+  height: 250px;
+  /*border-top: 2.5px solid gray;*/
 }
 
 .out-image {
@@ -141,7 +160,7 @@ td {
 /*pagination*/
 .ch-grid {
   z-index: 4;
-	margin: 10px 0 0 0;
+	margin: 50px 0 0 0;
 	padding: 0;
 	list-style: none;
 	display: block;

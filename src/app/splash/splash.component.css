@@ -37,12 +37,12 @@ h1  {
 
 .custom-button {
   /*margin-top: 500px;*/
-  height: 50px;
-  width: 200px;
+  height: 150px;
+  width: 150px;
   text-align: center;
   padding-top: 10px;
   padding-bottom: 10px;
-  border-radius: 25px;
+  border-radius: 150px;
   color: yellow;
   border:1px solid yellow;
 }
