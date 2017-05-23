@@ -13,26 +13,25 @@ export class SliderComponent implements OnInit {
 
   function Card (index, color) {
       this.index = index,
-      this.color = color,
-      this.width = "500px",
-      this.height = "500px"
+      this.color = color
   };
 
 //possible rename of slide to pushUp
 
   function animation(trigger: string, cardId: string, otherCard: string){
     $(trigger).click(function(){
-      if($(otherCard).hasClass('appear')) {
-        $(otherCard).addClass('fly');
-        setTimeout(function(){
-          $(otherCard).removeClass('appear');
-          $(otherCard).removeClass('fly');
-          $(cardId).addClass('appear');
-        }, 500);
-        $(cardId).addClass('animated fadeInUp');
-        $(cardId).one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
-          $(cardId).removeClass('fadeInUp');
-        });
+      switch(true){
+        case $(otherCard).hasClass('appear'):
+          $(otherCard).addClass('fly');
+          setTimeout(function(){
+            $(otherCard).removeClass('appear');
+            $(otherCard).removeClass('fly');
+            $(cardId).addClass('appear');
+          }, 500);
+            $(cardId).addClass('animated fadeInUp');
+            $(cardId).one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+              $(cardId).removeClass('fadeInUp');
+            });
       }
     });
   }
@@ -94,9 +93,8 @@ export class SliderComponent implements OnInit {
   let card6 = new Card(6, "darkblue");
   let card7 = new Card(7, "black");
 
-  card1.initiate = function(){
-
-  };
+  // card1.initiate = function(){
+  // };
 
   for (let i = 2; i < 8; i++) {
       let pushUp = "slide" + i.toString();
